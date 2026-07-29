@@ -153,7 +153,7 @@ const Multiplayer = (function () {
          * @param {Object} opts - { playerName, room, server? }
          */
         connect(opts = {}) {
-            const server = opts.server || (window.MP_SERVER || 'ws://localhost:8080');
+            const server = opts.server || (window.MP_SERVER || 'wss://anime-multiplayer-server.onrender.com');
             const playerName = opts.playerName || 'Anonimo';
             const room = opts.room || 'default';
 
